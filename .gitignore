@@ -1,0 +1,6 @@
+.nyc_output/
+coverage/
+jest_0/
+dist/
+.env
+node_modules/
