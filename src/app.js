@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.use(resources.order.list)
+app.get('/', (req, res, next) => res.send('teste'))
 
 app.listen(config.port(), () => {
   console.log('Running...')
