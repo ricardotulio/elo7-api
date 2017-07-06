@@ -4,9 +4,9 @@
   "description": "Alternative Elo7 API",
   "main": "dist/index.js",
   "scripts": {
-    "start": "nodemon src/app.js --exec babel-node",
+    "watch": "nodemon src/app.js --exec babel-node",
     "build": "rm -rf dist/ && babel src/ --out-dir dist/",
-    "serve": "node dist/app.js",
+    "start": "node dist/app.js",
     "test": "nyc jest --verbose --coverage",
     "lint": "eslint src/ tests/",
     "coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
