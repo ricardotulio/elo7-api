@@ -1,16 +1,16 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import elo7 from 'elo7'
 import config from '../config'
-import resources from './http/resources/'
+import middlewares from './http/middlewares'
+import mapRoutes from './http/mapRoutes'
+import routes from './http/routes'
 
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.use(resources.order.list)
-app.get('/', (req, res, next) => res.send('teste'))
+mapRoutes(routes, app)
 
 app.listen(config.port(), () => {
   console.log('Running...')

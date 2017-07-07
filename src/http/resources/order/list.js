@@ -1,15 +1,13 @@
-import express from 'express'
 import elo7 from 'elo7'
-import routes from '../../../routes'
 
-const router = express.Router()
+const list = () => {
+  const credentials = {
+    email: process.env.ELO7_EMAIL,
+    password: process.env.ELO7_PASSWORD,
+  }
 
-const list = (req, res, next) => {
-  elo7.connect({ email: process.env.ELO7_EMAIL, password: process.env.ELO7_PASSWORD })
+  return elo7.connect(credentials)
     .then(client => client.order.list())
-    .then(orders => res.send(orders))
 }
 
-router.get(routes.order.list, list)
-  
-export default router
+export default list

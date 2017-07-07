@@ -1,5 +1,5 @@
 .nyc_output/
+.env
 coverage/
 jest_0/
-.env
 node_modules/

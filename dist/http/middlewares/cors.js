@@ -1,0 +1,14 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var cors = function cors(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Accept, Content-Type, Authorization');
+  next();
+};
+
+exports.default = cors;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9odHRwL21pZGRsZXdhcmVzL2NvcnMuanMiXSwibmFtZXMiOlsiY29ycyIsInJlcSIsInJlcyIsIm5leHQiLCJoZWFkZXIiXSwibWFwcGluZ3MiOiI7Ozs7O0FBQUEsSUFBTUEsT0FBTyxTQUFQQSxJQUFPLENBQUNDLEdBQUQsRUFBTUMsR0FBTixFQUFXQyxJQUFYLEVBQW9CO0FBQy9CRCxNQUFJRSxNQUFKLENBQVcsNkJBQVgsRUFBMEMsR0FBMUM7QUFDQUYsTUFBSUUsTUFBSixDQUFXLDhCQUFYLEVBQTJDLGlDQUEzQztBQUNBRixNQUFJRSxNQUFKLENBQVcsOEJBQVgsRUFBMkMscUNBQTNDO0FBQ0FEO0FBQ0QsQ0FMRDs7a0JBT2VILEkiLCJmaWxlIjoiY29ycy5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGNvcnMgPSAocmVxLCByZXMsIG5leHQpID0+IHtcbiAgcmVzLmhlYWRlcignQWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2luJywgJyonKVxuICByZXMuaGVhZGVyKCdBY2Nlc3MtQ29udHJvbC1BbGxvdy1NZXRob2RzJywgJ0dFVCwgUFVULCBQT1NULCBERUxFVEUsIE9QVElPTlMnKVxuICByZXMuaGVhZGVyKCdBY2Nlc3MtQ29udHJvbC1BbGxvdy1IZWFkZXJzJywgJ0FjY2VwdCwgQ29udGVudC1UeXBlLCBBdXRob3JpemF0aW9uJylcbiAgbmV4dCgpXG59XG5cbmV4cG9ydCBkZWZhdWx0IGNvcnNcbiJdfQ==
