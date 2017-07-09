@@ -7,9 +7,7 @@
     "watch": "nodemon src/app.js --exec babel-node",
     "build": "rm -rf dist/ && babel src/ --out-dir dist/",
     "start": "node dist/app.js",
-    "test": "nyc jest --verbose --coverage",
-    "lint": "eslint src/ tests/",
-    "coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "eslint src/ tests/ && nyc jest --verbose --coverage"
   },
   "jest": {
     "verbose": true,
