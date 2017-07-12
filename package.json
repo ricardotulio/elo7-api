@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "nodemon src/app.js --exec babel-node",
     "build": "rm -rf dist/ && babel src/ --out-dir dist/",
-    "start": "node dist/app.js",
+    "start": "npm run build && node dist/app.js",
     "test": "eslint src/ tests/ && nyc jest --verbose --coverage"
   },
   "jest": {
