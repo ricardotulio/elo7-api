@@ -1,6 +1,6 @@
 import { test } from 'ramda'
 
-const isPublicPath = (req, res, next) =>
+const isPublicPath = req =>
   test(/^\/public/, req.path)
 
 export default isPublicPath

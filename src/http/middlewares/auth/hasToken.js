@@ -1,6 +1,6 @@
-import { 
+import {
   pipe,
-  prop, 
+  prop,
   has,
 } from 'ramda'
 

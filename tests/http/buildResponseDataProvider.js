@@ -3,10 +3,10 @@ export const res = {
   send: jest.fn(),
 }
 
-export const endpointOk = () => new Promise((resolve, reject) => {
-  resolve('ok')
-})
+export const endpointOk = () => new Promise(resolve =>
+  resolve('ok'),
+)
 
 export const endpointWithError = () => {
-  throw 'error'
+  throw new Error()
 }

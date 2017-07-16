@@ -1,9 +1,5 @@
 import {
-  always,
-  has,
   ifElse,
-  pipe,
-  prop,
 } from 'ramda'
 import hasToken from './hasToken'
 import isValidToken from './isValidToken'

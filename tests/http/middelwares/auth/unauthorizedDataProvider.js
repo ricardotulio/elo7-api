@@ -1,7 +1,7 @@
 export const req = {
   headers: {
-    authorization: 'whatever'
-  }
+    authorization: 'whatever',
+  },
 }
 
 export const res = {
